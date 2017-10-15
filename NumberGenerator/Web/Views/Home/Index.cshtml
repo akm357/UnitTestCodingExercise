@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>Numbers Generator</h1>
+
+    <h3>Input:</h3>
+    Type a whole number equal to or greater than 1 in the box below. Once you click on the <b>Generate</b> button, the numeric sequences will appear below the text field.
+
+    <form name="getNumber">
+        <p>Enter a number:</p>
+        <input type="text" name="txtNumber" placeholder="Enter whole number" required min="1" pattern="^[1-9][0-9]*$" title="Please enter a whole number greater than or equal to 1" />
+        <input type="submit" name ="btnGenerate" value="Generate">
+    </form>
+
+    <br />
+
+    <div>
+        @if (ViewBag.TxtNumber != null && ViewBag.allNumbers != null)
+        {
+            <b>All Numbers:</b> @ViewBag.allNumbers
+        }
+    </div>
+    <div>
+        @if (ViewBag.TxtNumber != null && ViewBag.allOddNumbers != null)
+        {
+            <b>All Odd Numbers:</b> @ViewBag.allOddNumbers
+        }
+    </div>
+    <div>
+        @if (ViewBag.TxtNumber != null && ViewBag.allEvenNumbers != null)
+        {
+            <b>All Even Numbers:</b> @ViewBag.allEvenNumbers
+        }
+    </div>
+    
+    <div>
+        @if (ViewBag.TxtNumber != null && ViewBag.allExtendedFizzBuzzs != null)
+        {
+            <b>All Extended FizzBuzzs:</b> @ViewBag.allExtendedFizzBuzzs
+        }
+     </div>
+    <div>
+        @if (ViewBag.TxtNumber != null && ViewBag.allFibonacciNumbers != null)
+        {
+            <b>All Fibonacci Numbers:</b> @ViewBag.allFibonacciNumbers
+        }
+    </div>
+</body>
+</html>
