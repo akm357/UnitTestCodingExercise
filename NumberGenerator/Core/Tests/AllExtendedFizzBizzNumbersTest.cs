@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace Core.Tests
 {
     [TestFixture]
-    class AllFizzBizzNumbersTest
+    class AllExtendedFizzBizzNumbersTest
     {
         [Test]
         public void TestExtendedFizzBizzGeneral ()
@@ -38,12 +38,10 @@ namespace Core.Tests
         [Test]
         public void TestExtendedFizzBizzMaxInt()
         {
-            int input = 0;
-            while (input < int.MaxValue)
-            {
-                var result = new AllExtendedFizzBuzzs().CreateSequence(input);
-                Assert.IsTrue(TestExtendedFizzBizz(result, input));
-            }
+            int input = int.MaxValue;
+            var result = new AllExtendedFizzBuzzs().CreateSequence(input);
+            Assert.IsTrue(TestExtendedFizzBizz(result, input));
+
         }
 
         [Test]

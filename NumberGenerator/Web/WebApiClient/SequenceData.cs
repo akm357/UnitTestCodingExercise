@@ -18,7 +18,7 @@ namespace Web.WebApiClient
             {
                 SequenceApiClient numericSequenceApiClient = new SequenceApiClient();
 
-                string requestUrl = "http://localhost/api/Numbers/AllNumbers/" + number;
+                string requestUrl = "http://localhost:10827/api/Numbers/AllNumbers/" + number;
 
                 string response = numericSequenceApiClient.GetSequence(requestUrl);
 
@@ -56,7 +56,7 @@ namespace Web.WebApiClient
             {
                 SequenceApiClient numericSequenceApiClient = new SequenceApiClient();
 
-                string requestUrl = "http://localhost/api/Numbers/AllEvenNumbers/" + number;
+                string requestUrl = "http://localhost:10827/api/Numbers/AllEvenNumbers/" + number;
 
                 string response = numericSequenceApiClient.GetSequence(requestUrl);
 
@@ -94,7 +94,7 @@ namespace Web.WebApiClient
             {
                 SequenceApiClient numericSequenceApiClient = new SequenceApiClient();
 
-                string requestUrl = "http://localhost/api/Numbers/AllOddNumbers/" + number;
+                string requestUrl = "http://localhost:10827/api/Numbers/AllOddNumbers/" + number;
 
                 string response = numericSequenceApiClient.GetSequence(requestUrl);
 
@@ -132,7 +132,7 @@ namespace Web.WebApiClient
             {
                 SequenceApiClient numericSequenceApiClient = new SequenceApiClient();
 
-                string requestUrl = "http://localhost/api/Numbers/AllExtendedFizzBuzzs/" + number;
+                string requestUrl = "http://localhost:10827/api/Numbers/AllExtendedFizzBuzzs/" + number;
 
                 string response = numericSequenceApiClient.GetSequence(requestUrl);
 
@@ -170,7 +170,7 @@ namespace Web.WebApiClient
             {
                 SequenceApiClient numericSequenceApiClient = new SequenceApiClient();
 
-                string requestUrl = "http://localhost/api/Numbers/AllFibonacciNumbers/" + number;
+                string requestUrl = "http://localhost:10827/api/Numbers/AllFibonacciNumbers/" + number;
 
                 string response = numericSequenceApiClient.GetSequence(requestUrl);
 
